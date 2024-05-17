@@ -44,13 +44,12 @@ public class EmployeeTest {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
-        Employee emp = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
+        Employee emp1 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                    "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+                "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
-                                    Date.valueOf("2055-10-10"));
-
-        assertNotNull(emp);
+                Date.valueOf("2055-10-10"));
+        assertNotNull(emp1);
 
     }
 
@@ -66,17 +65,17 @@ public class EmployeeTest {
 
         employee.setEmployeeID(1);
 
-        employee.setFirstName("Sadhana");
+        employee.setFirstName("Allan");
 
-        employee.setLastName("Madina");
+        employee.setLastName("Thomas");
 
-        employee.setGender("Female");
+        employee.setGender("Male");
 
-        employee.setEmail("sadhana@gmail.com");
+        employee.setEmail("allanthomas@gmail.com");
 
-        employee.setPhoneNumber("9933993399");
+        employee.setPhoneNumber("9955993399");
 
-        employee.setAddress("Tekkali");
+        employee.setAddress("Guindy");
 
         employee.setPosition("SWE");
 
@@ -90,17 +89,17 @@ public class EmployeeTest {
 
         assertEquals(1, employee.getEmployeeID());
 
-        assertEquals("Sadhana", employee.getFirstName());
+        assertEquals("Allan", employee.getFirstName());
 
-        assertEquals("Madina", employee.getLastName());
+        assertEquals("Thomas", employee.getLastName());
 
-        assertEquals("Female", employee.getGender());
+        assertEquals("Male", employee.getGender());
 
-        assertEquals("sadhana@gmail.com", employee.getEmail());
+        assertEquals("allanthomas@gmail.com", employee.getEmail());
 
-        assertEquals("9933993399", employee.getPhoneNumber());
+        assertEquals("9955993399", employee.getPhoneNumber());
 
-        assertEquals("Tekkali", employee.getAddress());
+        assertEquals("Guindy", employee.getAddress());
 
         assertEquals("SWE", employee.getPosition());
 
@@ -120,17 +119,17 @@ public class EmployeeTest {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
-        Employee emp1 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
+        Employee emp1 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                     "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+                "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
-                                     Date.valueOf("2055-10-10"));
+                Date.valueOf("2055-10-10"));
 
-        Employee emp2 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
+        Employee emp2 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                     "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+                "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
-                                     Date.valueOf("2055-10-10"));
+                Date.valueOf("2055-10-10"));
 
 
 
@@ -146,23 +145,23 @@ public class EmployeeTest {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
-        Employee emp1 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
+        Employee emp1 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                     "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
-
-                                     Date.valueOf("2055-10-10"));
-
-        Employee emp2 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
-
-                                     "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+                                     "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
                                      Date.valueOf("2055-10-10"));
+        Employee emp2 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-        Employee emp3 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "99333399",
+                "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
-                                     "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+                Date.valueOf("2055-10-10"));
+        Employee emp3 = new Employee(2, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                     Date.valueOf("2055-10-10"));
+                "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+
+                Date.valueOf("2055-10-10"));
+
+       
 
 
 
@@ -186,19 +185,15 @@ public class EmployeeTest {
 
     public void testToString() throws ParseException {SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
-    Employee emp1 = new Employee(1, "Sadhana", "Madina", "Female", "sadhana@gmail.com", "9933993399",
+    Employee emp1 = new Employee(1, "Allan", "Thomas", "Male", "allanthomas@gmail.com", "9955993399",
 
-                                 "Tekkali", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
+            "Guindy", "SWE", Date.valueOf("2000-10-10"), Date.valueOf("2024-05-01"),
 
-                                 Date.valueOf("2055-10-10"));
+            Date.valueOf("2055-10-10"));
 
 
 
-    String expected = "Employee [EmployeeID=1, FirstName=Sadhana, LastName=Madina, Gender=Female, " +
-
-                      "Email=sadhana@gmail.com, PhoneNumber=9933993399, Address=Tekkali, Position=SWE, " +
-
-                      "Dob=2000-10-10, JoiningDate=2024-05-01, TerminationDate=2055-10-10]";
+    String expected = "Employee [EmployeeID=1, FirstName=Allan, LastName=Thomas, Gender=Male, Email=allanthomas@gmail.com, PhoneNumber=9955993399, Address=Guindy, Position=SWE, Dob=2000-10-10, JoiningDate=2024-05-01, TerminationDate=2055-10-10]";
 
     assertEquals(expected, emp1.toString());
 
